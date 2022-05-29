@@ -1,0 +1,71 @@
+/* ------------PRAICES----------- */
+.praices {
+  background-color: #111319;
+  background-image: url(../img/fon-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.praices-text {
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+.praices-title {
+  color: var(--main-title-color);
+  margin-bottom: 44px;
+}
+.praices-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+.praices-container:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.praices-list {
+  padding: 30px 40px;
+  flex-grow: 1;
+}
+.praices-list:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.praices-list:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.praices-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.praices-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.praices-item::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+.praices-item-text {
+  color: var(--text-p-color);
+}
+.praices-item-text:last-child {
+  order: 1;
+}
+.praices-button {
+  display: block;
+  color: var(--main-btn-color);
+  margin: 0 auto;
+}
+.praices-button:focus,
+.praices-button:hover {
+  background-color: var(--accent-color);
+  color: var(--main-btn-color);
+}

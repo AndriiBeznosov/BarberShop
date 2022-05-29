@@ -1,0 +1,71 @@
+/* -------------MASTERS-------------- */
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #f7f7f7;
+}
+.masters-top-text {
+  color: var(--second-title-color);
+  margin-bottom: 20px;
+}
+.masters-title {
+  color: var(--second-title-color);
+  margin-bottom: 44px;
+}
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.masters-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+.masters-item img {
+  margin-bottom: 30px;
+}
+
+
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.masters-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+.masters-list-icon {
+  display: flex;
+  justify-content: center;
+}
+.masters-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #303030;
+}
+.masters-icon {
+  fill: currentColor;
+}
+.masters-link-icon:hover,
+.masters-link-icon:focus {
+  position: relative;
+  transform: scale(1.2);
+  color: #ff6c00;
+}
+.masters-item-icon:not(:last-child) {
+  margin-right: 10px;
+}

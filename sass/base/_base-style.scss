@@ -1,0 +1,49 @@
+.body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+}
+.top-text::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  margin-right: 21px;
+}
+.bottom-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.title {
+  font-family: 'Raleway', Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+.btn {
+  font-family: inherit;
+  height: 40px;
+  min-width: 160px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
+  background-color: transparent;
+  color: #fff;
+}
