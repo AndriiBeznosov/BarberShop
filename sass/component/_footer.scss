@@ -1,0 +1,33 @@
+.footer-list-network {
+  display: flex;
+}
+.footer-item + .footer-item {
+  margin-left: 40px;
+}
+
+.footer-networks-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  letter-spacing: 0.2em;
+  color: var(--second-title-color);
+  &:hover,
+  &focus {
+    color: var(--accent-color);
+  }
+}
+.container-footer--flex {
+  display: flex;
+  padding: 55px 0;
+  justify-content: space-between;
+}
+
+.container-footer--text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}

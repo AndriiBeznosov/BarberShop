@@ -215,6 +215,10 @@ button {
   /* margin-top: 36px; */
 }
 
+.mobile {
+  display: none;
+}
+
 /* --------------HERO------------- */
 .container-network-flex {
   display: flex;
@@ -664,10 +668,6 @@ button {
   margin-right: 16px;
   fill: var(--text-p-color);
 }
-.address__icon:hover, .address__icon:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
 .address__link {
   font-size: 18px;
   line-height: 1.67;
@@ -803,6 +803,44 @@ button {
   color: rgb(157, 164, 189);
 }
 
+/* ----------Backdrop--------- */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(85, 85, 85, 0.565);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  min-height: 500px;
+  transform: translate(-50%, -50%);
+  transition: translate 3000ms ease;
+  background-color: rgba(255, 255, 255, 0.837);
+  border-radius: 5px;
+}
+
+.backdrop-btm {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px silver;
+  color: rgba(85, 85, 85, 0.9019607843);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .footer-list-network {
   display: flex;
 }
@@ -836,44 +874,4 @@ button {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
-}
-
-/* ----------Backdrop--------- */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(85, 85, 85, 0.565);
-  transition: transform 250ms ease, opacity 250ms ease;
-  transform: scale(1);
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  min-height: 500px;
-  background-color: rgba(255, 255, 255, 0.837);
-  border-radius: 5px;
-}
-
-.backdrop-btm {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  box-shadow: 0 0 2px silver;
-  color: rgba(85, 85, 85, 0.9019607843);
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.9);
 }/*# sourceMappingURL=main.css.map */
