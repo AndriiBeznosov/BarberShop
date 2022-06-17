@@ -20,10 +20,10 @@
   margin-right: 21px;
 }
 .bottom-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(16px, 1.62, 400, 0.02em);
+  @include desktop {
+    @include font(18px, 1.67, 400, 0.02em);
+  }
 }
 .title {
   font-family: 'Raleway', Tahoma, sans-serif;

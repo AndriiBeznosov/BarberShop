@@ -11,10 +11,25 @@
 }
 .logo {
   margin-right: 70px;
+
+  @media screen and (max-width: 769px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    fill: #ffffff;
+  }
 }
-.header-list {
-  display: flex;
+.header-nav {
+  display: none;
+  @include tablet {
+    display: block;
+  }
 }
+
+// .header-list {
+//   // display: flex;
+// }
 .header-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -60,7 +75,12 @@
 
 .header-tel-btm {
   margin-left: auto;
+  display: none;
+  @include tablet {
+    display: block;
+  }
 }
+
 .header-link-tel {
   color: var(--main-title-color);
   font-weight: 600;
